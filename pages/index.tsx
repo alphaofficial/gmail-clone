@@ -1,26 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import type { NextPage } from "next";
+import { Layout } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <Box>
+    <Layout>
       <Box>
-        <Typography>Top bar (search and avatar / menu section)</Typography>
+        <Typography variant="h1">Content</Typography>
       </Box>
-      <Box>
-        <Box>
-          <Typography>Sidebar</Typography>
-        </Box>
-        <Box>
-          <Box>
-            <Typography>Action and pagination</Typography>
-          </Box>
-          <Box>
-            <Typography>Email list and tabs</Typography>
-          </Box>
-        </Box>
-      </Box>
-    </Box>
+    </Layout>
   );
 };
 
