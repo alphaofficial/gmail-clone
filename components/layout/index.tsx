@@ -10,11 +10,7 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Box height="100vh" py={0.5} px={1}>
-      <Box
-        sx={{
-          width: "248px",
-        }}
-      >
+      <Box>
         <Topbar />
       </Box>
       <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
