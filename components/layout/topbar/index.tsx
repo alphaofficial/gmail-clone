@@ -18,7 +18,7 @@ const Topbar = () => {
       >
         <Stack direction="row" spacing={2.5} alignItems="center">
           <Box>
-            <MdMenu />
+            <MdMenu size={25} />
           </Box>
           <Box>
             <Image src="/assets/logo.png" alt="Gmail" width={109} height={40} />
