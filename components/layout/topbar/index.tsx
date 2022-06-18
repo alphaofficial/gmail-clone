@@ -1,11 +1,12 @@
-import { Avatar, Box, Stack } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Avatar, Box, Stack } from "@chakra-ui/react";
 import Image from "next/image";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
+import {
+  MdHelpOutline,
+  MdOutlineSettings,
+  MdOutlineApps,
+  MdMenu,
+} from "react-icons/md";
 import SearchInput from "../../core/SearchInput";
-import theme from "../../../theme";
 
 const Topbar = () => {
   return (
@@ -17,7 +18,7 @@ const Topbar = () => {
       >
         <Stack direction="row" spacing={2.5} alignItems="center">
           <Box>
-            <MenuIcon />
+            <MdMenu />
           </Box>
           <Box>
             <Image src="/assets/logo.png" alt="Gmail" width={109} height={40} />
@@ -41,20 +42,20 @@ const Topbar = () => {
             spacing={3}
             alignItems="center"
             sx={{
-              color: theme.palette.grey[600],
+              color: "grey.600",
             }}
           >
             <Box>
-              <HelpOutlineOutlinedIcon color="inherit" />
+              <MdHelpOutline color="inherit" size={25} />
             </Box>
             <Box>
-              <SettingsOutlinedIcon color="inherit" />
+              <MdOutlineSettings color="inherit" size={25} />
             </Box>
             <Box>
-              <AppsOutlinedIcon color="inherit" />
+              <MdOutlineApps color="inherit" size={25} />
             </Box>
             <Box>
-              <Avatar alt="Remy Sharp" src="https://picsum.photos/200" />
+              <Avatar src="https://picsum.photos/200" />
             </Box>
           </Stack>
         </Box>
